@@ -2233,5 +2233,18 @@ public class GT_ModHandler {
             toSend.setInteger("energy", energy);
             FMLInterModComms.sendMessage("ThermalExpansion", "Coolant", toSend);
         }
+        
+        /**
+         * Returns a Liquid Stack with given amount of Ender I/O cloud seed.
+         */
+        public static FluidStack getCloudSeed(long aAmount) {
+            return FluidRegistry.getFluidStack("cloud_seed", (int) aAmount);
+        }
+        /**
+         * Returns a Liquid Stack with given amount of Ender I/O concentrated cloud seed.
+         */
+        public static FluidStack getCloudSeed(long aAmount) {
+            return FluidRegistry.getFluidStack("cloud_seed_concentrated", (int) aAmount);
+        }
     }
 }
