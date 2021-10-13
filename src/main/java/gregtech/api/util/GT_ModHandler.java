@@ -2243,7 +2243,7 @@ public class GT_ModHandler {
         /**
          * Returns a Liquid Stack with given amount of Ender I/O concentrated cloud seed.
          */
-        public static FluidStack getCloudSeed(long aAmount) {
+        public static FluidStack getConcentratedCloudSeed(long aAmount) {
             return FluidRegistry.getFluidStack("cloud_seed_concentrated", (int) aAmount);
         }
     }
